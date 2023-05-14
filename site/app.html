@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+    <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="./control_utils3d.css">
+  <link rel="stylesheet" href="./control_utils.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.3/control_utils_3d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!--div class="topnav">
+    <img class = "Home-page-2" src ="./logoacasa.png">
+      <a href="./index.html" cursor = "pointer"> </a>
+    </img-->
+
+  <style>
+    .landmark-grid-container {
+      width: 100%;
+      height: 80%;
+      position: relative;
+      display: flex;
+      background-color: transparent;
+      opacity: 75%;
+    }
+  </style>
+  <div class="container">
+    <div class="container-item-11">
+      <div class="landmark-grid-container"> </div>
+    </div>
+    <div class="container-item-22">
+      <video class="input_video"></video>
+      <canvas class="output_canvas"></canvas>
+    </div>
+  </div>
+  <div class="rezultat-cuvinte">
+    <div class = "container-item-11">
+      <div class = "p41" id = "p4">
+      <a href="#" class="btn-neon">
+        <div class="fade-out-image"></div>
+        <svg height="50" width="180">
+          <polyline points="0,0 180,0 180,50 0,50 0,00">
+          </polyline>
+        </svg>
+      </a>
+      </div>
+    </div>
+    <div class = "container-item-22">
+        <div class ="buton-fill">
+          <div class = "p31" id="p3"></div>
+        </div>
+    </div>
+  </div>
+  <div class="loading">
+      <div class="spinner"></div>
+      <div class="message">
+        Loading
+      </div>
+  </div>
+  <div class="control-panel">
+  </div>
+ 
+   
+  <canvas id="background"></canvas>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js'></script>
+  <script type="module" src="./script.js"></script>
+  <script  src="./wave.js"></script>
+
+</body>
+</html>

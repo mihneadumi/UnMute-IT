@@ -1,0 +1,285 @@
+
+#background {
+  position: absolute;
+  z-index: -1;
+}
+html
+{
+  margin: 0; 
+  overflow: hidden;
+  font-size: 1.2em
+}
+
+body {
+    background: linear-gradient(-45deg, #2a5596, #cf8fa7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 14s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container
+{
+  position: absolute;
+  top: 5vh;
+  width: 100%;
+  height: 60%;
+
+}
+.container-item-1
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  float: left;
+  justify-content: center;
+}
+.landmark-grid-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  opacity: 50%;
+}
+.container-item-2
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-content: center;
+}
+.input1
+{
+  position: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  height: 50%;
+  float: top;
+  background-color: transparent;
+}
+.reguli
+{
+  position: flex;
+  justify-content: center;
+  align-content: center;
+  width: 45%;
+  height: 50%;
+  top: 30vh;
+  float: bottom;
+  position: absolute;
+  background-color: transparent;
+}
+.scriere-reguli
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 20%;
+  float: top;
+  padding: 60px;
+}
+
+
+.btn-neon{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  transition-delay: .9s;
+  position: relative;
+  display: inline-block;
+
+  box-shadow: 0 0 2rem #cf8fa7,
+  0 0 5rem #623ac8,
+  0 0 2rem #cf8fa7,
+  0 0 5rem #623ac8,
+  0 0 5rem #cf8fa7,
+  inset 0 0 2rem #623ac8;
+
+}
+
+::placeholder
+{
+  color:white
+}
+
+.btn-neon:hover{
+  box-shadow: 0 0 10px #cf8fa7,
+              0 0 40px #cf8fa7,
+              0 0 80px #cf8fa7;
+  background-color: #cf8fa7;
+}
+
+.btn-neon:hover polyline{
+  stroke-dashoffset: -460;
+}
+
+.btn-neon svg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-neon svg polyline{
+  fill: transparent;
+  stroke: #ff6f61;
+  stroke-width: 0px;
+  stroke-dasharray: 40 460;
+  stroke-dashoffset: 40;
+  transition:  .8s ease-in-out;
+}
+
+
+.regulament
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80%;
+  float: bottom;
+}
+
+.btn-neon1{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  background-color: transparent;
+  color: white;
+  width: 70%;
+  height: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  padding: 90px;
+  transition: 1s;
+  transition-delay: .9s;
+  position: relative;
+  display: inline-block;
+
+  box-shadow: 0 0 2rem #623ac8,
+  0 0 2rem #603be7,
+  0 0 2rem #623ac8,
+  0 0 2rem #603be7,
+  0 0 2rem #623ac8,
+  inset 0 0 3rem #603be7;
+
+}
+
+.btn-neon1:hover{
+  box-shadow: 0 0 10px #2a5596,
+              0 0 40px #2a5596,
+              0 0 80px #2a5596;
+  background-color: #2a5596;
+}
+
+.btn-neon1:hover polyline{
+  stroke-dashoffset: -460;
+}
+
+.btn-neon1 svg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-neon1 svg polyline{
+  fill: transparent;
+  stroke: #ff6f61;
+  stroke-width: 0px;
+  stroke-dasharray: 40 460;
+  stroke-dashoffset: 40;
+  transition:  .8s ease-in-out;
+}
+
+.btn-neon2{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  background-color: transparent;
+  color: white;
+  width: 30%;
+  height: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  padding: 90px;
+  transition: 1s;
+  transition-delay: .9s;
+  position: relative;
+  display: inline-block;
+
+  box-shadow: 0 0 2rem #623ac8,
+  0 0 2rem #603be7,
+  0 0 2rem #623ac8,
+  0 0 2rem #603be7,
+  0 0 2rem #623ac8,
+  inset 0 0 3rem #603be7;
+
+}
+
+.btn-neon2:hover{
+  box-shadow: 0 0 10px #2a5596,
+              0 0 40px #2a5596,
+              0 0 80px #2a5596;
+  background-color: #2a5596;
+}
+
+.btn-neon2:hover polyline{
+  stroke-dashoffset: -460;
+}
+
+.btn-neon2 svg{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-neon2 svg polyline{
+  fill: transparent;
+  stroke: #ff6f61;
+  stroke-width: 0px;
+  stroke-dasharray: 40 460;
+  stroke-dashoffset: 40;
+  transition:  .8s ease-in-out;
+}
+
