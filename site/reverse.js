@@ -364,7 +364,7 @@ const grid = new controls3d.LandmarkGrid(landmarkContainer, {
     numCellsPerAxis: 0,
     showHidden: false,
     centered: false,
-    isRotating: false,
+    isRotating: true,
     connectionWidth: 6.5,
 });
 grid.axesMaterial.visible = false;

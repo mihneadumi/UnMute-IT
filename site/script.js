@@ -59,10 +59,9 @@ function changeInHtml(data){
         {
             if(data.result == "okay" && inauntru == 0)
             {
-
                 ourText = document.getElementById("p3").innerHTML;
-                utterThis.text = ourText
-                synth.speak(utterThis)
+                utterThis.text = ourText;
+                synth.speak(utterThis);
 
                 document.getElementById("p3").innerHTML = " ";
                 return;
@@ -71,11 +70,24 @@ function changeInHtml(data){
             {
                 addBuffer("Together we can change the world!This is only the beginning!");
             }
-            else 
-            {
-                addBuffer(data.result);
-            }
             
+        }
+        if(inauntru == 1)
+        {
+            if(data.result == "greeting")
+            {
+                addBuffer("Describe");
+            }
+            if(data.result == "how")
+            {
+                addBuffer("Sign-language");
+            }
+            if(data.result == "goodbye")
+            {
+                addBuffer("Project");
+                document.getElementById("p3").innerHTML = " ";
+                document.getElementById("p3").innerHTML = "We are doing a project based on Sign-language recognition model which will innovate and open new ways to get stronger connections."
+            }
         }
         if(data.result == "custom1" && inauntru == 0)
         {
